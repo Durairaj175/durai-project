@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <div class="cart-container">
+        <div class="cart-header">
+            <h2>🛒 SHOPPING CART</h2>
+            <button class="close-btn">✖</button>
+        </div>
+        
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>PRODUCT</th>
+                    <th>PRICE</th>
+                    <th>QTY</th>
+                    <th>VAT</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <img src="st.webp" alt="Happy Little Critter">
+                            <span>Full hand shirts</span>
+                        </div>
+                    </td>
+                    <td>£59.99</td>
+                    <td>
+                        <button class="qty-btn" onclick="updateQty(-1, 0)">-</button>
+                        <input type="text" class="qty-input" value="3">
+                        <button class="qty-btn" onclick="updateQty(1, 0)">+</button>
+                    </td>
+                    <td>£2.95</td>
+                    <td class="total-price">£182.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <img src="sht.avif" alt="Scared Little Kittie">
+                            <span>Half hand shirts </span>
+                        </div>
+                    </td>
+                    <td>£23.99</td>
+                    <td>
+                        <button class="qty-btn" onclick="updateQty(-1, 1)">-</button>
+                        <input type="text" class="qty-input" value="1">
+                        <button class="qty-btn" onclick="updateQty(1, 1)">+</button>
+                    </td>
+                    <td>£1.95</td>
+                    <td class="total-price">£25.94</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-footer">
+            <button class="update-btn">Update Cart</button>
+        </div>
+    </div>
+<script>
+    function updateQty(change, rowIndex) {
+    let qtyInputs = document.querySelectorAll(".qty-input");
+    let totalPrices = document.querySelectorAll(".total-price");
+    
+    let prices = [59.99, 23.99]; // Prices of items
+    let vat = [2.95, 1.95]; // VAT values
+
+    let qty = parseInt(qtyInputs[rowIndex].value) + change;
+    
+    if (qty < 1) qty = 1; // Prevent negative values
+    qtyInputs[rowIndex].value = qty;
+
+    let total = (prices[rowIndex] * qty + vat[rowIndex]).toFixed(2);
+    totalPrices[rowIndex].innerText = £${total};
+    }
+</script>
+</body>
+</html>
