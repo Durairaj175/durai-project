@@ -1,0 +1,292 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.search-box {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    height: 100vh; /* Makes the section fill the entire screen height */
+    background-color: #c0f3d1; /* Background color */
+    margin: 1%;
+    height: auto;
+    width: auto;
+
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    margin-right: 20px; /* Add spacing between the text and the image */
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-text .discount {
+    font-size: 1.5rem;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.shop-btn {
+    padding: 12px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.shop-btn:hover {
+    background-color: #218838;
+}
+
+.hero-content img {
+    max-width: 500px; /* Set the image size */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Featured Categories */
+.featured-categories {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-weight: bold;
+    color: #333;
+}
+/* Product Section */
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #28a745;
+}
+/* General Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Feature Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.feature {
+    width: 23%;
+}
+
+.icon {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer Links Section */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-column {
+    width: 20%;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    color: #28a745;}
+    .features {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .feature {
+        width: 23%;
+    }
+    
+    .icon {
+        font-size: 24px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-links{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .footer-column {
+
+        width: 20%;
+    }
+    payment-partners, .app-download {
+        margin-top: 20px;
+    }
+    
+    .payment-partners img, .app-download img {
+        width: 120px;
+        margin: 5px;
+    }
+    
+    .copyright {
+        font-size: 12px;
+        color: #777;
+        margin-top: 20px;
+    }
+    .ft{
+        display: flex;
+        justify-content: space-between;
+    }
